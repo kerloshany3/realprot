@@ -1,31 +1,63 @@
 
 import React from "react";
 import { LampDemo } from './components/Banner'
-
-
+import ButtonMagic from "./components/ButtonMagic";
+import { IoPersonSharp } from "react-icons/io5";
+import Leog from "./components/Leog";
+import { BiSolidBadgeCheck } from "react-icons/bi";
+import {FloatingNav} from './components/ui/FloatingNav'
+import { IconWaveSawTool } from "@tabler/icons-react";
 
 export default function Home() {
 
 
 
   return (
+    <>
+      <div>
+
+        {/*  <div className=" relative">
+
+          <div className="relative inset-14 flex flex-col items-center justify-center z-10">
+            <div className="m-auto gap-10 flex justify-center my-6">
+              <ButtonMagic
+                title="My Social"
+                icon={<IoPersonSharp className="text-2xl ml-3" />}
+              />
+              <ButtonMagic
+                title="Projects"
+                icon={<BiSolidBadgeCheck className="text-2xl ml-2" />}
+              />
+            </div>
+          </div>
 
 
-    <div>
+          <div className=" inset-0 z-0">
+            <LampDemo />
+          </div>
+        </div> */}
 
 
-      <LampDemo></LampDemo>
+        <LampDemo></LampDemo>
 
-      <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-          Border Magic
-        </span>
-      </button>
+        
+        
+        <FloatingNav navItems={[
+          { name: "My Projects", link: "www.google.com" },
+          { name: "About Me ", link: "www.google.com" },
+          { name: "Contact", link: "www.google.com" },
+        
+        ]}></FloatingNav>
 
-      <h3>hi</h3>
 
 
-    </div>
+        
+        <ButtonMagic title="hello to every one"></ButtonMagic>
+
+
+      </div>
+    </>
+
+
   );
 }

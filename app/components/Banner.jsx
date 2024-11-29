@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { IoPersonSharp } from "react-icons/io5";
 import { LampContainer } from "../components/ui/lamp";
-
+import ButtonMagic from "./ButtonMagic";
 export function LampDemo() {
   return (
     (<LampContainer>
+
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +18,9 @@ export function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
         Full Stack Dev. <br /> Kerlos Hany
+
       </motion.h1>
+
     </LampContainer>)
   );
 }
