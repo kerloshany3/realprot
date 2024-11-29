@@ -1,16 +1,23 @@
-import Image from "next/image";
 
-import {LampDemo} from './components/Banner'
+import React from "react";
+import { LampDemo } from './components/Banner'
+
+
 
 export default function Home() {
-  return (
+
   
-    
+
+  return (
+
+
     <div>
 
 
       <LampDemo></LampDemo>
 
+      <h3>hi</h3>
+    
       
     </div>
   );
